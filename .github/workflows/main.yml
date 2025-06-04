@@ -2,13 +2,12 @@ name: CI for Blazor App
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]  # <- changed from main to master
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
-
     runs-on: windows-latest
 
     steps:
@@ -18,7 +17,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.0.x' # Or your project’s version
+        dotnet-version: '8.0.x'
 
     - name: Restore dependencies
       run: dotnet restore
