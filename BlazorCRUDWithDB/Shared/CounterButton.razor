@@ -1,0 +1,18 @@
+﻿<button class="btn btn-primary" @onclick="IncrementCount">
+    Count: @count
+</button>
+
+@code {
+    [Parameter] public int Start { get; set; } = 0;
+    private int count;
+
+    protected override void OnInitialized()
+    {
+        count = Start;
+    }
+
+    private void IncrementCount()
+    {
+        count++;
+    }
+}
