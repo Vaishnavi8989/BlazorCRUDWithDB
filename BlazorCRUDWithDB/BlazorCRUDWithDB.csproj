@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include=".githubworkflows\ci-blazor.yml" />
+    <None Include=".github\workflows\ci-blazor.yml" />
   </ItemGroup>
 
 </Project>
