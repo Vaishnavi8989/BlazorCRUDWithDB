@@ -48,6 +48,10 @@ namespace BlazorCRUDWithDB.Services
         //{
         //    return await _context.Employees.AnyAsync(e => e.Email == email);
         //}
+        public void SomeMethod()
+        {
+            Console.WriteLine("Hello"  // ← missing closing parenthesis and semicolon
+}
 
     }
 }
