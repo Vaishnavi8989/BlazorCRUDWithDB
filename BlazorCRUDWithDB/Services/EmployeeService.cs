@@ -50,7 +50,7 @@ namespace BlazorCRUDWithDB.Services
         //}
         public void SomeMethod()
         {
-            Console.WriteLine("Hello"  // ← missing closing parenthesis and semicolon
+            Console.WriteLine("Hello");  // ← missing closing parenthesis and semicolon
 }
 
     }
